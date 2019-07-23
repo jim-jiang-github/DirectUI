@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D0DEEB3-1154-4BB9-BE82-6E57754DFA33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DirectUI</RootNamespace>
+    <AssemblyName>DirectUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arithmetic\Bezier.cs" />
+    <Compile Include="Collection\DUIControlCollectionGrid.cs" />
+    <Compile Include="Common\DUIEntitys\DUIAnyBoundsPolygon.cs" />
+    <Compile Include="Common\DUIEntitys\DUIAnyBounds.cs" />
+    <Compile Include="Common\DUIEntitys\DUIDependentOnRenderTarget.cs" />
+    <Compile Include="Common\DUIEntitys\DUIGraphicsState.cs" />
+    <Compile Include="Common\DUIEntitys\DUIWICRenderTarget.cs" />
+    <Compile Include="Common\DUIEntitys\DUIThreadSaveActions.cs" />
+    <Compile Include="Common\DUIEntitys\DUIThreadSaveImage.cs" />
+    <Compile Include="Common\DUIEntitys\DUIThreadSaveBitmapBrush.cs" />
+    <Compile Include="Common\DUIEntitys\DUIColor.cs" />
+    <Compile Include="Common\DUIEntitys\DUIBitmap.cs" />
+    <Compile Include="Common\DUIEntitys\DUIGraphics_D2D.cs" />
+    <Compile Include="Common\DUIEntitys\DUIGraphics_GDIP.cs" />
+    <Compile Include="Common\DUIEntitys\DUIWindowRenderTarget.cs" />
+    <Compile Include="Common\DUIEntitys\DUIRenderTarget.cs" />
+    <Compile Include="Common\DUIEntitys\DUIDeviceContext.cs" />
+    <Compile Include="Common\DUIEntitys\DUITriangleF.cs" />
+    <Compile Include="Common\DUIEntitys\DUITriangle.cs" />
+    <Compile Include="Common\DUIEntitys\DUIQuadrangle.cs" />
+    <Compile Include="Common\DUIEntitys\DUIRectangleF.cs" />
+    <Compile Include="Common\DUIEntitys\DUIRectangle.cs" />
+    <Compile Include="Common\DUIEntitys\DUILinearGradientBrush.cs" />
+    <Compile Include="Common\DUIEntitys\DUIPens.cs" />
+    <Compile Include="Common\DUIEntitys\DUIBrushes.cs" />
+    <Compile Include="Common\DUIEntitys\DUIPen.cs" />
+    <Compile Include="Common\DUIEntitys\DUIBrush.cs" />
+    <Compile Include="Common\DUIEntitys\DUIBitmapBrush.cs" />
+    <Compile Include="Common\DUIEntitys\DUIRegion.cs" />
+    <Compile Include="Common\DUIEnum\DUIBoundsPolygonSpecified.cs" />
+    <Compile Include="Common\DUIEnum\DUIBoundsSpecified.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentAnyChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentBoundsChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentCenterChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentLocationChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentRotateAngleChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentScaleChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentSizeChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentSkewChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIPolygonAnyChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIMouseEditChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIBoundsChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEnum\DUIExtendMode.cs" />
+    <Compile Include="Common\DUIEntitys\DUIFont.cs" />
+    <Compile Include="Common\DUIEntitys\DUITextRenderer.cs" />
+    <Compile Include="Common\DUIEntitys\DUISolidBrush.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlBoundsChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlAnyChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlRotateAngleChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlScaleChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlSkewChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlCenterChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIAnyChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIPolygonChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIScaleChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUISkewChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEntitys\IDUIGraphics.cs" />
+    <Compile Include="Common\DUIInfo.cs" />
+    <Compile Include="Common\DUIEnum\DUIMode.cs" />
+    <Compile Include="Common\GDIP.cs" />
+    <Compile Include="Common\Matrix4x4.cs" />
+    <Compile Include="Common\DUIEntitys\DUIMatrix4x4.cs" />
+    <Compile Include="Common\DUIEntitys\DUIMatrix.cs" />
+    <Compile Include="Common\DxConvert.cs" />
+    <Compile Include="Controls\Button\DUIButton.cs" />
+    <Compile Include="Controls\CheckBox\DUICheckBox.cs" />
+    <Compile Include="Controls\CheckBox\DUICheckBoxBase.cs" />
+    <Compile Include="Controls\CheckBox\DUICheckState.cs" />
+    <Compile Include="Controls\CheckBox\DUIHexagonCheckBox.cs" />
+    <Compile Include="Controls\Label\DUILabel.cs" />
+    <Compile Include="Controls\MenuStrip\DUIMenuStrip.cs" />
+    <Compile Include="Controls\Panel\DUIPanel.cs" />
+    <Compile Include="Controls\PictureBox\DUIPictureBox.cs" />
+    <Compile Include="Controls\ProgressBar\DUIProgressBar.cs" />
+    <Compile Include="Controls\RadioButton\DUIRadioButton.cs" />
+    <Compile Include="Controls\Ruler\DUIRuler.cs" />
+    <Compile Include="Controls\ScrollBar\DUIHScrollBar.cs" />
+    <Compile Include="Controls\ScrollBar\DUIScrollBar.cs" />
+    <Compile Include="Controls\ScrollBar\DUIVScrollBar.cs" />
+    <Compile Include="Controls\Switch\DUISwitch.cs" />
+    <Compile Include="Controls\Switch\DUISwitchNative.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\DUINativeTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\DUITabControl.cs" />
+    <Compile Include="Controls\TabControl\DUITabPage.cs" />
+    <Compile Include="Controls\TextBox\DUITextBox.cs" />
+    <Compile Include="Controls\ToolBar\DUIToolBar.cs" />
+    <Compile Include="Controls\ToolBar\DUIToolBarItem.cs" />
+    <Compile Include="Controls\ToolTip\ToolTipControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolTip\ToolTipEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TrackBar\DUITrackBar.cs" />
+    <Compile Include="Core\Control\DUIPolygonControl.cs" />
+    <Compile Include="Core\DUIEditablePolygonControl\DUIEditablePolygonCenterControl.cs" />
+    <Compile Include="Core\DUIEditablePolygonControl\DUIEditablePolygonControl.cs" />
+    <Compile Include="Core\DUIEditableScaleParentControl\DUIEditableCenterScaleParentControl.cs" />
+    <Compile Include="Core\DUIEditableScaleParentControl\DUIEditableScaleParentControl.cs" />
+    <Compile Include="Core\DUIEditableScaleParentControl\DUIEditableSuspendedScaleParentControl.cs" />
+    <Compile Include="Core\EditableControl\DUIEditableSuspendedControl.cs" />
+    <Compile Include="Core\EditableControl\DUIEditableCenterControl.cs" />
+    <Compile Include="Core\EditableControl\DUIEditableControl.cs" />
+    <Compile Include="Core\EditableControl\AlwaysModifierKeys.cs" />
+    <Compile Include="Core\EditableControl\EffectMargin.cs" />
+    <Compile Include="Core\ScaleableControl\DUIScaleableControl.cs" />
+    <Compile Include="Core\ScrollableControl\DUIHScrollProperties.cs" />
+    <Compile Include="Core\ScrollableControl\DUIScrollableControl.cs" />
+    <Compile Include="Core\ScrollableControl\DUIScrollProperties.cs" />
+    <Compile Include="Core\ScrollableControl\DUIVScrollProperties.cs" />
+    <Compile Include="Log\DUILog.cs" />
+    <Compile Include="Proxy\TakesTimeInfo.cs" />
+    <Compile Include="Common\DUIEntitys\DUIImage.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIScrollEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIMouseEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIParentChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIRotateAngleChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUICenterChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlSizeChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlLocationChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIControlEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUILayoutEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUILocationChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIMouseStateEventArgs.cs" />
+    <Compile Include="Common\DUIEventArgs\DUISizeChangingEventArgs.cs" />
+    <Compile Include="Common\DUIEnum\DUITextRenderingHint.cs" />
+    <Compile Include="Common\DUIEnum\DUISmoothingMode.cs" />
+    <Compile Include="Common\GDI.cs" />
+    <Compile Include="Common\ImageDC.cs" />
+    <Compile Include="Common\Tools.cs" />
+    <Compile Include="Common\DUIEntitys\DUIBorder.cs" />
+    <Compile Include="Collection\DUIItemCollection.cs" />
+    <Compile Include="Core\Container\DUIContainer.cs" />
+    <Compile Include="Core\NativeControl\DUINativeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Control\DUIControl.cs" />
+    <Compile Include="Cursors\DUICursors.cs" />
+    <Compile Include="Common\DUIEntitys\DUIGraphics.cs" />
+    <Compile Include="Common\DUIEventArgs\DUIPaintEventArgs.cs" />
+    <Compile Include="Proxy\AOPMethodsTakesTime.cs" />
+    <Compile Include="Proxy\AOPProxyAttribute.cs" />
+    <Compile Include="Proxy\AOPRealProxy.cs" />
+    <Compile Include="Proxy\IAOPInterceptAchieve.cs" />
+    <Compile Include="Proxy\TakesTime.cs" />
+    <Compile Include="Share\DUIControlShare.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Share\LayoutEngine.cs" />
+    <Compile Include="Tools\TimeTools.cs" />
+    <Compile Include="Tools\ConvertTools.cs" />
+    <Compile Include="Tools\LoopTool.cs" />
+    <Compile Include="Tools\MouseHook.cs" />
+    <Compile Include="Tools\PointTools.cs" />
+    <Compile Include="Tools\MatrixTools.cs" />
+    <Compile Include="Tools\PolygonTools.cs" />
+    <Compile Include="Tools\RotateTools.cs" />
+    <Compile Include="Tools\ShapeTools.cs" />
+    <Compile Include="Win32\Callback\Functions.cs" />
+    <Compile Include="Win32\ClassName.cs" />
+    <Compile Include="Win32\Com\DOCHOSTUIFLAG.cs" />
+    <Compile Include="Win32\Com\DOCHOSTUIINFO.cs" />
+    <Compile Include="Win32\Com\DWebBrowserEvents2.cs" />
+    <Compile Include="Win32\Com\ICustomDoc.cs" />
+    <Compile Include="Win32\Com\IDocHostUIHandler.cs" />
+    <Compile Include="Win32\Com\IDropTarget.cs" />
+    <Compile Include="Win32\Com\IOleCommandTarget.cs" />
+    <Compile Include="Win32\Com\IOleInPlaceActiveObject.cs" />
+    <Compile Include="Win32\Com\IOleInPlaceFrame.cs" />
+    <Compile Include="Win32\Com\IOleInPlaceUIWindow.cs" />
+    <Compile Include="Win32\Com\IWebBrowser2.cs" />
+    <Compile Include="Win32\Com\OLECMDEXECOPT.cs" />
+    <Compile Include="Win32\Com\OLECMDF.cs" />
+    <Compile Include="Win32\Com\OLECMDID.cs" />
+    <Compile Include="Win32\Com\tagMSG.cs" />
+    <Compile Include="Win32\Com\tagOLECMD.cs" />
+    <Compile Include="Win32\Com\tagPOINT.cs" />
+    <Compile Include="Win32\Com\tagRECT.cs" />
+    <Compile Include="Win32\Const\BI.cs" />
+    <Compile Include="Win32\Const\DIB.cs" />
+    <Compile Include="Win32\Const\DIGCF.cs" />
+    <Compile Include="Win32\Const\HEAP.cs" />
+    <Compile Include="Win32\Const\INVALID.cs" />
+    <Compile Include="Win32\Const\DROPEFFECT.cs" />
+    <Compile Include="Win32\Const\ERROR.cs" />
+    <Compile Include="Win32\Const\MEM.cs" />
+    <Compile Include="Win32\Const\PAGE.cs" />
+    <Compile Include="Win32\Const\PF.cs" />
+    <Compile Include="Win32\Const\PROCESSOR.cs" />
+    <Compile Include="Win32\Const\WAIT.cs" />
+    <Compile Include="Win32\Const\AC.cs" />
+    <Compile Include="Win32\Const\AW.cs" />
+    <Compile Include="Win32\Const\BM.cs" />
+    <Compile Include="Win32\Const\CDDS.cs" />
+    <Compile Include="Win32\Const\CDM.cs" />
+    <Compile Include="Win32\Const\CDN.cs" />
+    <Compile Include="Win32\Const\CDRF.cs" />
+    <Compile Include="Win32\Const\CombineRgnStyles.cs" />
+    <Compile Include="Win32\Const\CS.cs" />
+    <Compile Include="Win32\Const\DCX.cs" />
+    <Compile Include="Win32\Const\DI.cs" />
+    <Compile Include="Win32\Const\EM.cs" />
+    <Compile Include="Win32\Const\ESB.cs" />
+    <Compile Include="Win32\Const\GCL.cs" />
+    <Compile Include="Win32\Const\GCS.cs" />
+    <Compile Include="Win32\Const\GCW.cs" />
+    <Compile Include="Win32\Const\GWL.cs" />
+    <Compile Include="Win32\Const\HT.cs" />
+    <Compile Include="Win32\Const\HC.cs" />
+    <Compile Include="Win32\Const\HITTEST.cs" />
+    <Compile Include="Win32\Const\HWND.cs" />
+    <Compile Include="Win32\Const\ICC.cs" />
+    <Compile Include="Win32\Const\ICON.cs" />
+    <Compile Include="Win32\Const\LPSTR.cs" />
+    <Compile Include="Win32\Const\MA.cs" />
+    <Compile Include="Win32\Const\NM.cs" />
+    <Compile Include="Win32\Const\OBJID.cs" />
+    <Compile Include="Win32\Const\OF.cs" />
+    <Compile Include="Win32\Const\PM.cs" />
+    <Compile Include="Win32\Const\PRF.cs" />
+    <Compile Include="Win32\Const\RDW.cs" />
+    <Compile Include="Win32\Const\RGN.cs" />
+    <Compile Include="Win32\Const\SB.cs" />
+    <Compile Include="Win32\Const\SBM.cs" />
+    <Compile Include="Win32\Const\SC.cs" />
+    <Compile Include="Win32\Const\SIF.cs" />
+    <Compile Include="Win32\Const\SS.cs" />
+    <Compile Include="Win32\Const\SW.cs" />
+    <Compile Include="Win32\Const\SWP.cs" />
+    <Compile Include="Win32\Const\TBM.cs" />
+    <Compile Include="Win32\Const\TCHT.cs" />
+    <Compile Include="Win32\Const\TCM.cs" />
+    <Compile Include="Win32\Const\TernaryRasterOperations.cs" />
+    <Compile Include="Win32\Const\TME.cs" />
+    <Compile Include="Win32\Const\TPM.cs" />
+    <Compile Include="Win32\Const\TTDT.cs" />
+    <Compile Include="Win32\Const\TTF.cs" />
+    <Compile Include="Win32\Const\TTI.cs" />
+    <Compile Include="Win32\Const\TTM.cs" />
+    <Compile Include="Win32\Const\TTN.cs" />
+    <Compile Include="Win32\Const\TTS.cs" />
+    <Compile Include="Win32\Const\VK.cs" />
+    <Compile Include="Win32\Const\WA.cs" />
+    <Compile Include="Win32\Const\WH.cs" />
+    <Compile Include="Win32\Const\WM.cs" />
+    <Compile Include="Win32\Const\WS.cs" />
+    <Compile Include="Win32\Const\WS_EX.cs" />
+    <Compile Include="Win32\Const\WVR.cs" />
+    <Compile Include="Win32\DwmApi.cs" />
+    <Compile Include="Win32\Helper.cs" />
+    <Compile Include="Win32\HttpWebRequestHelper.cs" />
+    <Compile Include="Tools\KeyBordHook.cs" />
+    <Compile Include="Win32\NativeMethods.cs" />
+    <Compile Include="Win32\Result.cs" />
+    <Compile Include="Win32\ShellHelper.cs" />
+    <Compile Include="Win32\Struct\API_MSG.cs" />
+    <Compile Include="Win32\Struct\BITMAPINFO.cs" />
+    <Compile Include="Win32\Struct\BITMAPINFOHEADER.cs" />
+    <Compile Include="Win32\Struct\BLENDFUNCTION.cs" />
+    <Compile Include="Win32\Struct\COMDLG_FILTERSPEC.cs" />
+    <Compile Include="Win32\Struct\COPYDATASTRUCT.cs" />
+    <Compile Include="Win32\Struct\CWPRETSTRUCT.cs" />
+    <Compile Include="Win32\Struct\CWPSTRUCT.cs" />
+    <Compile Include="Win32\Struct\GPRECTF.cs" />
+    <Compile Include="Win32\Struct\INITCOMMONCONTROLSEX.cs" />
+    <Compile Include="Win32\Struct\KEYBOARDHOOKSTRUCT.cs" />
+    <Compile Include="Win32\Struct\LOGBRUSH.cs" />
+    <Compile Include="Win32\Struct\LOGFONT.cs" />
+    <Compile Include="Win32\Struct\MEMORYSTATUSEX.cs" />
+    <Compile Include="Win32\Struct\MEMORY_BASIC_INFORMATION.cs" />
+    <Compile Include="Win32\Struct\MINMAXINFO.cs" />
+    <Compile Include="Win32\Struct\MOUSEHOOKSTRUCT.cs" />
+    <Compile Include="Win32\Struct\MOUSEHOOKSTRUCTEX.cs" />
+    <Compile Include="Win32\Struct\NCCALCSIZE_PARAMS.cs" />
+    <Compile Include="Win32\Struct\NMCUSTOMDRAW.cs" />
+    <Compile Include="Win32\Struct\NMHDR.cs" />
+    <Compile Include="Win32\Struct\NMTTCUSTOMDRAW.cs" />
+    <Compile Include="Win32\Struct\NMTTDISPINFO.cs" />
+    <Compile Include="Win32\Struct\OFNOTIFY.cs" />
+    <Compile Include="Win32\Struct\OSVERSIONINFOEX.cs" />
+    <Compile Include="Win32\Struct\OVERLAPPED.cs" />
+    <Compile Include="Win32\Struct\PAINTSTRUCT.cs" />
+    <Compile Include="Win32\Struct\PCURSORINFO.cs" />
+    <Compile Include="Win32\Struct\POINT.cs" />
+    <Compile Include="Win32\Struct\PROCESS_INFORMATION.cs" />
+    <Compile Include="Win32\Struct\PROPERTYKEY.cs" />
+    <Compile Include="Win32\Struct\RECT.cs" />
+    <Compile Include="Win32\Struct\RGBQUAD.cs" />
+    <Compile Include="Win32\Struct\RGNDATA.cs" />
+    <Compile Include="Win32\Struct\RGNDATAHEADER.cs" />
+    <Compile Include="Win32\Struct\SCROLLBARINFO.cs" />
+    <Compile Include="Win32\Struct\SCROLLINFO.cs" />
+    <Compile Include="Win32\Struct\SHELLEXECUTEINFO.cs" />
+    <Compile Include="Win32\Struct\SIZE.cs" />
+    <Compile Include="Win32\Struct\SP_DEVINFO_DATA.cs" />
+    <Compile Include="Win32\Struct\STYLESTRUCT.cs" />
+    <Compile Include="Win32\Struct\SYSTEM_INFO.cs" />
+    <Compile Include="Win32\Struct\TCHITTESTINFO.cs" />
+    <Compile Include="Win32\Struct\TOOLINFO.cs" />
+    <Compile Include="Win32\Struct\TRACKMOUSEEVENT.cs" />
+    <Compile Include="Win32\Struct\TT_HITTESTINFO.cs" />
+    <Compile Include="Win32\Struct\UPDATELAYEREDWINDOWINFO.cs" />
+    <Compile Include="Win32\Struct\WINDOWINFO.cs" />
+    <Compile Include="Win32\Struct\WINDOWPLACEMENT.cs" />
+    <Compile Include="Win32\Struct\WINDOWPOS.cs" />
+    <Compile Include="Win32\SystemInformationHelper.cs" />
+    <Compile Include="Win32\WinAPI.cs" />
+    <Compile Include="Win32\WindowsType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\rotate.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\tickBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\tickWhile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\closeDownBack.png" />
+    <EmbeddedResource Include="Resources\closeMouseBack.png" />
+    <EmbeddedResource Include="Resources\closeNormlBack.png" />
+    <EmbeddedResource Include="Resources\skinDownBack.png" />
+    <EmbeddedResource Include="Resources\skinMouseBack.png" />
+    <EmbeddedResource Include="Resources\skinNormlBack.png" />
+    <EmbeddedResource Include="Resources\maxDownBack.png" />
+    <EmbeddedResource Include="Resources\maxMouseBack.png" />
+    <EmbeddedResource Include="Resources\maxNormlBack.png" />
+    <EmbeddedResource Include="Resources\miniDownBack.png" />
+    <EmbeddedResource Include="Resources\miniMouseBack.png" />
+    <EmbeddedResource Include="Resources\miniNormlBack.png" />
+    <EmbeddedResource Include="Resources\restoreDownBack.png" />
+    <EmbeddedResource Include="Resources\restoreMouseBack.png" />
+    <EmbeddedResource Include="Resources\restoreNormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cursors\rotateCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\Form\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SharpDX">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="SharpDX.Direct2D1">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="SharpDX.Direct3D11">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="SharpDX.DXGI">
+      <Version>4.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

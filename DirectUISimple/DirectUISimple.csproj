@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DirectUI\DirectUI.csproj">
+      <Project>{2d0deeb3-1154-4bb9-be82-6e57754dfa33}</Project>
+      <Name>DirectUI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
