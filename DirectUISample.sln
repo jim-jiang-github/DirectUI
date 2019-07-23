@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectUISample", "DirectUISimple\DirectUISample.csproj", "{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectUI", "DirectUI\DirectUI.csproj", "{2D0DEEB3-1154-4BB9-BE82-6E57754DFA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectUISample", "DirectUISample\DirectUISample.csproj", "{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D0DEEB3-1154-4BB9-BE82-6E57754DFA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D0DEEB3-1154-4BB9-BE82-6E57754DFA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D0DEEB3-1154-4BB9-BE82-6E57754DFA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D0DEEB3-1154-4BB9-BE82-6E57754DFA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E029B75-5DA0-4AA6-937E-1D73B7BD8598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

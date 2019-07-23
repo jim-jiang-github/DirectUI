@@ -8,7 +8,7 @@ namespace DirectUI.Common
 {
     /// <summary> 一个线程安全的画笔类
     /// </summary>
-    public class DUIThreadSaveBitmapBrush : IDisposable
+    public class DUIThreadSafeBitmapBrush : IDisposable
     {
         private readonly static object lockObj = new object();
         private Size size = Size.Empty;
@@ -62,7 +62,7 @@ namespace DirectUI.Common
         /// </summary>
         /// <param name="size">画笔初始尺寸</param>
         /// <param name="drawAction">绘图函数</param>
-        public DUIThreadSaveBitmapBrush(Size size, Action<DUIGraphics, Size> drawAction)
+        public DUIThreadSafeBitmapBrush(Size size, Action<DUIGraphics, Size> drawAction)
         {
             this.lastSize = size;
             this.Size = size;
@@ -72,12 +72,12 @@ namespace DirectUI.Common
         /// </summary>
         /// <param name="size">画笔初始尺寸</param>
         /// <param name="drawAction">绘图函数</param>
-        public DUIThreadSaveBitmapBrush(Func<Size> sizeFunc, Action<DUIGraphics, Size> drawAction)
+        public DUIThreadSafeBitmapBrush(Func<Size> sizeFunc, Action<DUIGraphics, Size> drawAction)
         {
             this.sizeFunc = sizeFunc;
             this.drawAction = drawAction;
         }
-        public DUIThreadSaveBitmapBrush(Action<DUIGraphics, Size> drawAction)
+        public DUIThreadSafeBitmapBrush(Action<DUIGraphics, Size> drawAction)
         {
             this.drawAction = drawAction;
         }

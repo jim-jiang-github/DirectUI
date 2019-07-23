@@ -16,11 +16,11 @@ namespace DirectUI.Controls
         private float wordStartSpace = 3; //文字距离开始坐标的间距
         private float dividingInterval = 5;//刻度间隔
         private float dividingHeight = 3;//刻度高度
-        private DUIThreadSaveBitmapBrush dividingBrush = null;
+        private DUIThreadSafeBitmapBrush dividingBrush = null;
         private float lastWidth = 0;
         private float lastDividingInterval = 5;
         private Color lastForeColor = Color.Black;
-        public DUIThreadSaveBitmapBrush DividingBrush
+        public DUIThreadSafeBitmapBrush DividingBrush
         {
             get
             {
@@ -83,7 +83,7 @@ namespace DirectUI.Controls
         {
             this.Height = 20;
             this.brush = new DUISolidBrush(this.ForeColor);
-            this.dividingBrush = new DUIThreadSaveBitmapBrush(new Size(1, 1), (g, s) =>
+            this.dividingBrush = new DUIThreadSafeBitmapBrush(new Size(1, 1), (g, s) =>
             {
                 using (DUIPen pen = new DUIPen(this.ForeColor))
                 {
