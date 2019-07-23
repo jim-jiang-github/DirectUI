@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.duiNativeControl1 = new DirectUI.Core.DUINativeControl();
+            this.SuspendLayout();
+            // 
+            // duiNativeControl1
+            // 
+            this.duiNativeControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.duiNativeControl1.Location = new System.Drawing.Point(0, 0);
+            this.duiNativeControl1.Name = "duiNativeControl1";
+            this.duiNativeControl1.Size = new System.Drawing.Size(800, 450);
+            this.duiNativeControl1.TabIndex = 0;
+            this.duiNativeControl1.Text = "duiNativeControl1";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.duiNativeControl1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private DirectUI.Core.DUINativeControl duiNativeControl1;
     }
 }
 

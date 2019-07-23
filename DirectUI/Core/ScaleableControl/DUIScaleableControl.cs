@@ -323,6 +323,10 @@ namespace DirectUI.Core
                 e.Graphics.DrawRectangle(borderPen, new RectangleF(this.BorderWidth / 2F, this.BorderWidth / 2F, this.Width - this.BorderWidth, this.Height - this.BorderWidth));
                 e.Graphics.FillRectangle(backBrush, new RectangleF((this.BorderWidth - this.Center.X) / this.scaling, (this.BorderWidth - this.Center.Y) / this.scaling, this.ClientSize.Width / this.scaling, this.ClientSize.Height / this.scaling));
             }
+            if (this.BackgroundImage != null)
+            {
+                e.Graphics.DrawImage(this.BackgroundImage, new RectangleF(this.BorderWidth, this.BorderWidth, this.ClientSize.Width, this.ClientSize.Height));
+            }
             //if (PaintBackground != null)
             //{
             //    PaintBackground(this, e);
