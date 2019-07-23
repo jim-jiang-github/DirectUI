@@ -1,4 +1,4 @@
-﻿namespace DirectUISimple
+﻿namespace DirectUISample
 {
     partial class Form1
     {
