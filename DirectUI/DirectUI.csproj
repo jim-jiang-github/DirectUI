@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arithmetic\Bezier.cs" />
     <Compile Include="Collection\DUIControlCollectionGrid.cs" />
     <Compile Include="Common\DUIEntitys\DUIAnyBoundsPolygon.cs" />
     <Compile Include="Common\DUIEntitys\DUIAnyBounds.cs" />
@@ -162,7 +161,6 @@
     <Compile Include="Core\ScrollableControl\DUIScrollProperties.cs" />
     <Compile Include="Core\ScrollableControl\DUIVScrollProperties.cs" />
     <Compile Include="Log\DUILog.cs" />
-    <Compile Include="Proxy\TakesTimeInfo.cs" />
     <Compile Include="Common\DUIEntitys\DUIImage.cs" />
     <Compile Include="Common\DUIEventArgs\DUIScrollEventArgs.cs" />
     <Compile Include="Common\DUIEventArgs\DUIMouseEventArgs.cs" />
@@ -178,7 +176,6 @@
     <Compile Include="Common\DUIEventArgs\DUISizeChangingEventArgs.cs" />
     <Compile Include="Common\DUIEnum\DUITextRenderingHint.cs" />
     <Compile Include="Common\DUIEnum\DUISmoothingMode.cs" />
-    <Compile Include="Common\GDI.cs" />
     <Compile Include="Common\ImageDC.cs" />
     <Compile Include="Common\Tools.cs" />
     <Compile Include="Common\DUIEntitys\DUIBorder.cs" />
@@ -191,11 +188,6 @@
     <Compile Include="Cursors\DUICursors.cs" />
     <Compile Include="Common\DUIEntitys\DUIGraphics.cs" />
     <Compile Include="Common\DUIEventArgs\DUIPaintEventArgs.cs" />
-    <Compile Include="Proxy\AOPMethodsTakesTime.cs" />
-    <Compile Include="Proxy\AOPProxyAttribute.cs" />
-    <Compile Include="Proxy\AOPRealProxy.cs" />
-    <Compile Include="Proxy\IAOPInterceptAchieve.cs" />
-    <Compile Include="Proxy\TakesTime.cs" />
     <Compile Include="Share\DUIControlShare.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Share\LayoutEngine.cs" />
@@ -388,9 +380,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Cursors\rotateCursor.cur" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\Form\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="SharpDX">
       <Version>4.2.0</Version>
