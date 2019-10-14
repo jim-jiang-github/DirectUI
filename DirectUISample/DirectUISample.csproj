@@ -47,6 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmDUIControlDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDUIControlDemo.Designer.cs">
+      <DependentUpon>FmDUIControlDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDUIEditableControlDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDUIEditableControlDemo.Designer.cs">
+      <DependentUpon>FmDUIEditableControlDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDUIScaleableControlDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDUIScaleableControlDemo.Designer.cs">
+      <DependentUpon>FmDUIScaleableControlDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDUIScrollableControlDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDUIScrollableControlDemo.Designer.cs">
+      <DependentUpon>FmDUIScrollableControlDemo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +79,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmDUIControlDemo.resx">
+      <DependentUpon>FmDUIControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDUIEditableControlDemo.resx">
+      <DependentUpon>FmDUIEditableControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDUIScaleableControlDemo.resx">
+      <DependentUpon>FmDUIScaleableControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDUIScrollableControlDemo.resx">
+      <DependentUpon>FmDUIScrollableControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,7 +124,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\2.jpg" />
+    <None Include="Resources\2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
