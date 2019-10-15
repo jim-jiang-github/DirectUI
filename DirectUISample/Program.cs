@@ -16,7 +16,7 @@ namespace DirectUISample
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FmDUIScrollableControlDemo());
+            Application.Run(new FmCompositeSample());
         }
     }
 }

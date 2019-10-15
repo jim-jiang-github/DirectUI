@@ -361,23 +361,6 @@
     <EmbeddedResource Include="Resources\tickWhile.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\closeDownBack.png" />
-    <EmbeddedResource Include="Resources\closeMouseBack.png" />
-    <EmbeddedResource Include="Resources\closeNormlBack.png" />
-    <EmbeddedResource Include="Resources\skinDownBack.png" />
-    <EmbeddedResource Include="Resources\skinMouseBack.png" />
-    <EmbeddedResource Include="Resources\skinNormlBack.png" />
-    <EmbeddedResource Include="Resources\maxDownBack.png" />
-    <EmbeddedResource Include="Resources\maxMouseBack.png" />
-    <EmbeddedResource Include="Resources\maxNormlBack.png" />
-    <EmbeddedResource Include="Resources\miniDownBack.png" />
-    <EmbeddedResource Include="Resources\miniMouseBack.png" />
-    <EmbeddedResource Include="Resources\miniNormlBack.png" />
-    <EmbeddedResource Include="Resources\restoreDownBack.png" />
-    <EmbeddedResource Include="Resources\restoreMouseBack.png" />
-    <EmbeddedResource Include="Resources\restoreNormlBack.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Cursors\rotateCursor.cur" />
   </ItemGroup>
   <ItemGroup />
