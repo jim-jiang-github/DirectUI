@@ -47,12 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DUICutBar.cs" />
-    <Compile Include="FmCompositeSample.cs">
+    <Compile Include="FmCompositeSample_Cubes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmCompositeSample.Designer.cs">
-      <DependentUpon>FmCompositeSample.cs</DependentUpon>
+    <Compile Include="FmCompositeSample_Cubes.Designer.cs">
+      <DependentUpon>FmCompositeSample_Cubes.cs</DependentUpon>
     </Compile>
     <Compile Include="FmDUIControlDemo.cs">
       <SubType>Form</SubType>
@@ -86,8 +85,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FmCompositeSample.resx">
-      <DependentUpon>FmCompositeSample.cs</DependentUpon>
+    <EmbeddedResource Include="FmCompositeSample_Cubes.resx">
+      <DependentUpon>FmCompositeSample_Cubes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmDUIControlDemo.resx">
       <DependentUpon>FmDUIControlDemo.cs</DependentUpon>
