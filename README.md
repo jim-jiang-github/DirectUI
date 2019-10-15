@@ -42,3 +42,7 @@ public Form1()
 
 ![avatar](https://github.com/ft9788501/DirectUI/blob/master/SampleGif/Cubes.gif?raw=true)
 
+* 这是效果全面一点的例子，不过是公司的项目无法提供源代码
+
+![avatar](https://github.com/ft9788501/DirectUI/blob/master/SampleGif/Full.gif?raw=true)
+
